@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--박세민/60210021/기초웹 과제#3-->
+    <meta charset="UTF-8">
+    <meta http-equiv="XX-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My MIP</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <header>
+        <a href="./main.html"  class="main-title"><h1>Memoirs In Pixels</h1></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">전체보기</a></li>
+            <li><a href="#">여행계획</a></li>
+            <li><a href="#">공부계획</a></li>
+            <li><a href="#">동아리계획</a></li>
+            <li><a href="#">가계부</a></li>
+            <li><a href="#">일기장</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="section1">
+            <h2>Profile</h2>
+            <div>
+                <img src="./프로필사진.png" alt="#" class="profile-img">
+                <h3><span>👩🏻</span><em>박세민(semin09)</em></h3>
+                <strong>목표<br>
+                1. 인프런 백앤드 과정 1회독하기<br>
+                2. 매일 배드민턴 다니기<br>
+                3. 백준 플레 만들기</strong></p>
+            </div>
+            <div class="set">
+                <a href="./write.html" target="_blank" class="setting"><span>✏️</span>글쓰기</a>
+                <a href="#" class="setting"><span>⚙️</span>프로필 설정</a>
+            </div>
+        </section>
+        <section class="section2">
+            <table class="table-border tr-cal td-cal th-border">
+                <caption><h2>December 2024</h2></caption>
+                <thead>
+                    <tr class="day" style="height: 18px;">
+                        <th><strong>일</strong></th>
+                        <th><strong>월</strong></th>
+                        <th><strong>화</strong></th>
+                        <th><strong>수</strong></th>
+                        <th><strong>목</strong></th>
+                        <th><strong>금</strong></th>
+                        <th><strong>토</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>
+                            9
+                            <br>
+                            <strong>기말고사</strong>
+                        </td>
+                        <td>
+                            10
+                            <br>
+                            <strong>기말고사</strong>
+                        </td>
+                        <td>
+                            11
+                            <br>
+                            <strong>기말고사</strong>
+                        </td>
+                        <td>
+                            12
+                            <br>
+                            <strong>기말고사</strong>
+                        </td>
+                        <td>
+                            13
+                            <br>
+                            <strong>종강</strong>
+                        </td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23<br><strong>계절학기</strong></td>
+                        <td>24</td>
+                        <td>25<br><strong>크리스마스</strong></span>
+                        </td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td colspan="4"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="cal-plan">
+                        <td colspan="7">Notice: D-day 크리스마스</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div>
+                <a href="#" class="setting"><span>✏️</span>일정 추가하기</a>
+            </div>
+        </section>
+        <section class="section3">
+            <h2>Study Link</h2>
+            <ul class="link-list" style="list-style: none;">
+                <li class="linkli" data-key="0"><a href="https://lms.mju.ac.kr/ilos/main/main_form.acl"
+                    target="_blank" title="명지대lms">명지대LMS 온라인 강의+과제</a><button class="removelink">X</button></li>
+                <li class="linkli" data-key="1"><a href="https://www.acmicpc.net/"
+                    target="_blank" title="백준">BAEKJOON 문제 풀기</a><button class="removelink">X</button></li>
+                <li class="linkli" data-key="2"><a href="https://www.inflearn.com/"
+                    target="_blank" title="인프런">인프런 강의 보기</a><button class="removelink">X</button></li>
+                <li class="linkli" data-key="3"><a href="https://www.kaggle.com/"
+                    target="_blank" title="캐글">Kaggle 데이터분석</a><button class="removelink">X</button></li>
+                <li class="linkli" data-key="4"><a href="https://e-book.mju.ac.kr/elibrary-front/main.ink"
+                    target="_blank" title="명지대도서관">명지대 도서관</a><button class="removelink">X</button></li>
+            </ul>
+            <hr>
+            <div>
+                <input id="add-link"><button id="add-link-button">링크 추가하기</button>
+                <p style="color: gray;"><em>사이트명,링크 형식으로 작성해주세요.</em></p>
+            </div>
+        </section>
+        <section class="section4">
+            <table class="table-border th-border">
+                <caption><h2>Study Planner</h2></caption>
+                <col style="width: 50px;">
+                <col style="width: 130px;">
+                <col style="width: 100px;">
+                <col style="width: 400px;">
+                <colgroup span="2" style="width: 40px;"></colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="2">시간</th>
+                        <th scope="col">구분</th>
+                        <th scope="col">내용</th>
+                        <th scope="col">공부</th>
+                        <th scope="col">복습</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">AM</td>
+                        <td>7:30 - 9:00</td>
+                        <td class="subject1">알고리즘</td>
+                        <td class="content1">DP 백준 세 문제 풀기</td>
+                        <td><input type="checkbox" class="study1"></td>
+                        <td><input type="checkbox" class="review1"></td>
+                    </tr>
+                    <tr>
+                        <td>10:30 - 11:30</td>
+                        <td class="subject2">OS</td>
+                        <td class="content2">Ch08 1독 후 단권화하기</td>
+                        <td><input type="checkbox" class="study2"></td>
+                        <td><input type="checkbox" class="review2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">PM</td>
+                        <td>1:30 - 4:00</td>
+                        <td class="subject3">인공지능</td>
+                        <td class="content3">데이터 전처리 예제 풀어보기 + 과제</td>
+                        <td><input type="checkbox" class="study3"></td>
+                        <td><input type="checkbox" class="review3"></td>
+                    </tr>
+                    <tr>
+                        <td>7:30 - 8:30</td>
+                        <td class="subject4">기웹프</td>
+                        <td class="content4">React PPT 복습하기 + 과제</td>
+                        <td><input type="checkbox" class="study4"></td>
+                        <td><input type="checkbox" class="review4"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" class="countToDo">오늘의 일정은 총 <strong>4</strong>개입니다. 현재까지 <strong>0</strong>개 완료했습니다.</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div>
+                <a href="#" class="setting"><span>✏️</span>할 일 추가하기</a>
+            </div>
+        </section>
+        <section class="section5">
+            <h2>Yesterday's Diary</h2>
+            <p>
+                <img src="./크리스마스파티.png" alt="일기사진" class="diary-img">
+                2024년 12월 25일,<br>학기를 모두 마치고 드디어 크리스마스 파티를 했다!<br>
+                중간고사 준비가 특히 힘들었던 한 학기지만<br>기말고사는 중간고사보다 만족스럽게 볼 수 있었다.<br> 
+                만족스럽게 학기를 마치고 맞이한 크리스마스는 뿌듯하고 편안했다.<br>
+                한 학기동안 고생한 나에게 위로와 축하를 주는 하루를 보낼 수 있어서 행복했다.<br>
+                고생했다. 다음 학기도 이번 학기처럼 후회없이 보내보자!!<br><hr>
+                Last Christmas, I gave you my heart
+                But the very next day you gave it away
+                This year, to save me from tears
+                I'll give it to someone special
+                Last Christmas, I gave you my heart
+                But the very next day, you gave it away (you gave it away)
+                This year, to save me from tears
+                I'll give it to someone special (special)
+                Once bitten and twice shy
+                I keep my distance
+                But you still catch my eye
+                Tell me, baby
+                Do you recognize me?
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p><br>박세민/60210021/기초웹 과제#3<br>
+            <a href="https://policy.naver.com/rules/service.html"
+            target="_blank" title="이용약관">이용약관</a>
+            <strong>MIP</strong> Copyright © MIP Corp. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--박세민/60210021/기초웹 과제#3-->
+    <meta charset="UTF-8">
+    <meta http-equiv="XX-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My MIP-write</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="main.css">
+    <script src="script2.js" async></script>
+</head>
+<body>
+    <header>
+        <a href="./main.html" class="main-title"><h1>Memoirs In Pixels</h1></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">전체보기</a></li>
+            <li><a href="#">여행계획</a></li>
+            <li><a href="#">공부계획</a></li>
+            <li><a href="#">동아리계획</a></li>
+            <li><a href="#">가계부</a></li>
+            <li><a href="#">일기장</a></li>
+        </ul>
+    </nav>
+    <main id="write-main">
+        <section class="comment">
+            <h2>다이어리 작성하기</h2>
+            <p>작성하고 싶은 글을 작성한 후 저장 버튼을 눌러주세요.</p>
+        </section>
+        <section class="save-info">
+            <form action="#">
+                <h2>저장 정보</h2>
+                <p>
+                    <label for="category">카테고리: </label>
+                    <select name="category" id="category">
+                        <optgroup label="일기장">
+                            <option value="일기">일기쓰기</option>
+                        </optgroup>
+                        <optgroup label="계획서">
+                            <option value="여행계획">여행계획</option>
+                            <option value="공부계획">공부계획</option>
+                            <option value="동아리계획">동아리계획</option>
+                            <option value="그 외 계획">기타</option>
+                        </optgroup>
+                        <optgroup label="가계부">
+                            <option value="일일 가계부">일별</option>
+                            <option value="월별 가계부">주별</option>
+                            <option value="연말 결산">연말</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    공개여부: 
+                    <input type="radio" name="disclosure" value="open" id="open" checked><label for="open">공개</label>
+                    <input type="radio" name="disclosure" value="forfriend" id="forfriend"><label for="forfriend">친구공개</label>
+                    <input type="radio" name="disclosure" value="close" id="close"><label for="close">비공개</label>
+                </p>
+                <p>
+                    발행설정: 
+                    <input type="checkbox" id="comment"><label for="comment">댓글허용</label>
+                    <input type="checkbox" id="heart"><label for="heart">공감허용</label>
+                    <input type="checkbox" id="search"><label for="search">검색허용</label>
+                </p>
+                <hr>
+                <p class="settime-parent">
+                    <label for="settime"><input type="checkbox" id="settime">발행예약</label>
+                    <!--
+                    <label for="time">: 발행시간 설정</label>
+                    <input type="datetime-local" id="time">-->
+                </p>
+            </form>
+        </section>
+        <section class="save-content">
+            <form action="#">
+                <h2 class="doc-title">일기 작성</h2>
+                <p>
+                    <label for="setpassword"><input type="checkbox" id="setpassword">비밀번호 설정(숫자 4자리)</label>
+                    <label for="password"><input type="password" id="password"></label><p class="warning"></p>
+                </p>
+                <hr>
+                <p>
+                    <label for="title">제목:</label>
+                    <input type="text" id="write-title" maxlength="80" size="100">
+                </p>
+                <p>
+                    <label for="content">내용:</label>
+                    <textarea name="content" id="write-content" cols="103" rows="10"></textarea>
+                </p>
+                <p>
+                    <label for="upload">사진첨부:</label>
+                    <input type="file" name="img" id="upload"></input>
+                </p>
+                <P>
+                    <label for="feeling">오늘의 나의 기분: </label>
+                    <select name="feeling" id="feeling">
+                        <option value="좋음">좋음</option>
+                        <option value="보통">보통</option>
+                        <option value="나쁨">나쁨</option>
+                    </select>
+                    <p class="response-feeling"></p>
+                </P>
+                <hr>
+                <p>
+                    <label for="submit"><input type="submit" value="저장" id="submit"></label>
+                    <h4 class="reloadTitle"></h4>
+                    <p class="reloadContent" style="overflow-wrap: break-word;"></p>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><br>박세민/60210021/기초웹 과제#3<br>
+            <a href="https://policy.naver.com/rules/service.html"
+            target="_blank" title="이용약관">이용약관</a>
+            <strong>MIP</strong> Copyright © MIP Corp. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,265 @@
+/*박세민/60210021/기초웹 과제#3*/
+html,body{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+
+h1,h2{
+    font-family: 'Exo 2';
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+footer a,header>a,nav a{
+    color: white;
+    text-decoration: none;
+    padding: 14px, 20px;
+}
+
+/*header*/
+header{
+    background-color: #254336;
+    padding: 20px;
+}
+.main-title>h1{
+    color: white;
+    text-align: center;
+}
+
+/*nav*/
+nav{
+    background-color: #6B8A7A;
+    padding: 10px;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav a:hover{
+    background-color: #575757;
+    color:goldenrod;
+}
+nav a:active{
+    font-weight: bold;
+    color: greenyellow;
+}
+nav li:hover{
+    transform: scale(1.2);
+    transition: transform;
+    transition-duration: 0.35s;
+    transition-timing-function: ease;
+}
+
+/*main, grid*/
+main{
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 440px 733px;
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+    padding-top: 25px;
+}
+section{
+    background-color: #dad3be49;
+    color: #374151;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.section1{
+    width: 400px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.section2{
+    width: 693px;
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+.section3{
+    width: 400px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.section4{
+    width: 693px;
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.section5{
+    box-sizing: content-box;
+    width: 1152px;
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+/*프로필*/
+.profile-img{
+    width: 400px;
+}
+.set>a{
+    display:block;
+}
+
+/*달력*/
+table {
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.table-border td{
+    border: 1px solid #828282;
+}
+.tr-cal tr{
+    height: 95px;
+    vertical-align: top;
+}
+.td-cal td{
+    width: 96px;
+}
+.cal-plan{
+    height: 50px !important;
+}
+.cal-plan>td{
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(174, 0, 0);
+}
+.day>th{
+    background-color: #6b8a7a35;
+}
+
+/*자주 가는 사이트*/
+.section3 ul a:link{
+    color: #254336;
+}
+.section3 ul a:link{
+    color: #fb00ff;
+}
+
+
+/*스터디 플래너*/
+.th-border th{
+    border: 1px solid #828282;
+}
+th[scope="col"]{
+    background-color: #6b8a7a35;
+}
+.planner-box tr{
+    height: 35px;
+}
+
+/*최근 일기*/
+.diary-img{
+    float: left;
+    margin-right: 25px;
+    width: 300px;
+}
+
+/*footer*/
+footer{
+    background-color: #6B8A7A;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+}
+
+/*게시글 수정 링크*/
+.setting{
+    text-decoration: none;
+    color: gray;
+}
+.setting:hover{
+    color: magenta;
+    font-weight: bolder;
+}
+
+@media only all and (max-width:1312px){
+    main{
+        grid-template-columns: repeat(2,440px);
+        grid-template-rows: 660px 660px 300px 370px;
+    }
+    .section1{
+        width: 400px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .section2{
+        width: 860px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .section2>table{
+        margin: auto;
+    }
+    .section3{
+        width: 400px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .section4{
+        width: 860px;
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .section4>table{
+        margin: auto;
+    }
+    .section5{
+        width: 860px;
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+}
+
+/*글쓰기 버튼을 눌러야 write.html 페이지로 이동합니다.*/
+/*write.html*/
+#write-main{
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: 800px;
+    grid-template-rows: 150px 250px 700px;
+    gap: 20px;
+    padding-top: 25px;
+}
+#write-main section:nth-child(1){
+    grid-row: 1/2;
+}
+#write-main section:nth-child(2){
+    grid-row: 2/3;
+}
+#write-main section:nth-child(3){
+    grid-row: 3/4;
+}
+
+input:checked+label{
+    font-weight: bolder;
+}
+
+/*과제3에서 추가한 태그*/
+.warning{
+    color: red;
+}
+.passwordtitle{
+    color: black;
+}
+.response-feeling{
+    color:darkgreen;
+    font-weight: bold;
+}
+.link-list button{
+    background-color: #fae6fa61;
+    color: #751877;
+}
